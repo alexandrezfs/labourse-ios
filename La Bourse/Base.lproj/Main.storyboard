@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Aujourd'hui-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="La_Bourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c40-Hu-TkH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="La Bourse" id="k85-Ro-vEJ"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c40-Hu-TkH" secondAttribute="trailing" constant="-16" id="INI-B1-gha"/>
+                            <constraint firstItem="c40-Hu-TkH" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="20" id="IdV-P9-Pq8"/>
+                            <constraint firstItem="c40-Hu-TkH" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="PGb-cS-r7D"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Aujourd'hui" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Vos magasins-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="La_Bourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MC4-Eb-Rvi">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" id="Fao-sk-6aV">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fao-sk-6aV" id="j5U-fC-6dx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PS-BJ-nFB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="La Bourse" id="fN5-0X-XLZ"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3PS-BJ-nFB" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="20" id="1rL-wN-eI5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MC4-Eb-Rvi" secondAttribute="trailing" constant="-16" id="QL9-va-Ze5"/>
+                            <constraint firstItem="MC4-Eb-Rvi" firstAttribute="bottom" secondItem="QS5-Rx-YEW" secondAttribute="bottomMargin" constant="-50" id="Rv0-um-H7o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3PS-BJ-nFB" secondAttribute="trailing" constant="-16" id="Vtz-eU-O6E"/>
+                            <constraint firstItem="MC4-Eb-Rvi" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="70" id="fuh-IO-Pcz"/>
+                            <constraint firstItem="3PS-BJ-nFB" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="htk-of-f0x"/>
+                            <constraint firstItem="MC4-Eb-Rvi" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="sNe-VQ-AOu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vos magasins" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="MC4-Eb-Rvi" id="RnQ-G0-KKX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Store Controller-->
+        <scene sceneID="YAd-kV-fXv">
+            <objects>
+                <viewController storyboardIdentifier="StoreView" id="6Vk-64-c2M" customClass="StoreController" customModule="La_Bourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TgR-Dt-paF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y3H-cf-h5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wx8-gS-I4g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-dc-slk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="La Bourse" id="dQc-uJ-9Nk">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="vEM-7Q-0jo">
+                                            <connections>
+                                                <segue destination="49e-Tb-3d3" kind="show" id="LZ4-8Z-hya"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vUe-sA-Dog">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" id="90m-8b-iHM">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="90m-8b-iHM" id="kfP-Ro-RF9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1C2-dc-slk" firstAttribute="leading" secondItem="Wx8-gS-I4g" secondAttribute="leadingMargin" constant="-16" id="8eF-6v-DdU"/>
+                            <constraint firstItem="vUe-sA-Dog" firstAttribute="leading" secondItem="Wx8-gS-I4g" secondAttribute="leadingMargin" constant="-16" id="KdB-mf-CIH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vUe-sA-Dog" secondAttribute="trailing" constant="-16" id="Qwa-XA-cyV"/>
+                            <constraint firstItem="1C2-dc-slk" firstAttribute="top" secondItem="Wx8-gS-I4g" secondAttribute="topMargin" constant="20" id="ZO0-GF-V5a"/>
+                            <constraint firstItem="Y3H-cf-h5x" firstAttribute="top" secondItem="vUe-sA-Dog" secondAttribute="bottom" id="iV7-EO-aVv"/>
+                            <constraint firstItem="vUe-sA-Dog" firstAttribute="top" secondItem="1C2-dc-slk" secondAttribute="bottom" id="jlN-FW-NGS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1C2-dc-slk" secondAttribute="trailing" constant="-16" id="nOr-0X-Rt3"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="navBar" destination="1C2-dc-slk" id="nvx-En-rUy"/>
+                        <outlet property="navItem" destination="vEM-7Q-0jo" id="Q4c-FC-Gql"/>
+                        <outlet property="tableView" destination="vUe-sA-Dog" id="pgq-RM-Xl5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuX-xt-69b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="741"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
