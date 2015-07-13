@@ -13,7 +13,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     let textCellIdentifier = "TextCell"
-    var swiftBlogs = [String]()
+    var magasins = [String]()
     
     override func viewDidLoad() {
         
@@ -28,7 +28,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             
             for (key: String, subJson: JSON) in json {
                 
-                self.swiftBlogs.append(subJson["localisation"].stringValue)
+                self.magasins.append(subJson["localisation"].stringValue)
                 
                 println(subJson["localisation"])
             }
@@ -55,7 +55,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return swiftBlogs.count
+        return magasins.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -63,7 +63,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         
         let row = indexPath.row
-        cell.textLabel?.text = swiftBlogs[row]
+        cell.textLabel?.text = magasins[row]
         
         return cell
         
@@ -74,14 +74,13 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
-        println(swiftBlogs[row])
+        println(magasins[row])
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("StoreView") as! StoreController
-        vc.selectedStore = swiftBlogs[row]
+        vc.selectedStore = magasins[row]
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
-
 }
 

@@ -10,13 +10,13 @@ import UIKit
 
 class StoreController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navItem: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationBar!
     
     let textCellIdentifier = "TextCell"
-    var swiftBlogs = [String]()
+    var dates = [String]()
+    var money = [String]()
     var selectedStore = String()
     
     override func viewDidLoad() {
@@ -36,9 +36,8 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
             
             for (key: String, subJson: JSON) in json {
                 
-                self.swiftBlogs.append(subJson["date"].stringValue + " : " + subJson["chiffre_journee"].stringValue + " €")
-                
-                println(subJson["chiffre_journee"])
+                self.dates.append(subJson["date"].stringValue)
+                self.money.append(subJson["chiffre_journee"].stringValue + " €")
             }
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -47,7 +46,6 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
         
         task.resume()
-        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -59,7 +57,7 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return swiftBlogs.count
+        return dates.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -67,7 +65,8 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         
         let row = indexPath.row
-        cell.textLabel?.text = swiftBlogs[row]
+        cell.textLabel?.text = money[row]
+        cell.detailTextLabel?.text = dates[row]
         
         return cell
         
@@ -78,7 +77,6 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
-        println(swiftBlogs[row])
         
     }
 }
