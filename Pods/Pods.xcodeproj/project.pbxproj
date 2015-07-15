@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5601715D84A08ECECAE7F73F /* Pods-La Bourse-Refresher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9457DA3B2A1E2ED1E9923C3 /* Pods-La Bourse-Refresher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A34597A4B78EE95494012B55 /* Pods-La Bourse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E077B146475C267F9778E22B /* Pods-La Bourse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B43F9635D2DEF63F96AD6D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4C9711CADC63479CE5412 /* Animator.swift */; };
+		B5ECA1E15E0ADC9D38082B11 /* Pods-La Bourse-Refresher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C94B67082DC855341A3759CF /* Pods-La Bourse-Refresher-dummy.m */; };
+		CFC9A8793EC63975AED3B23A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70F4343F3B7C3C634FC0DED /* Foundation.framework */; };
+		D22C4483ED04EE0B520817EE /* PullToRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B56B635F6F6DCBF5AEE9F /* PullToRefreshExtension.swift */; };
+		E002D14B5E229C1AC7B8BE32 /* Pods-La Bourse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A477A6FC2BBAEB2AB0E405A3 /* Pods-La Bourse-dummy.m */; };
+		E3667E178866E0725AD24C5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70F4343F3B7C3C634FC0DED /* Foundation.framework */; };
+		ECD6868AECC6E84CBFB1179B /* PullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783E8860163F465C7BEDBDD9 /* PullToRefreshView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95DCF48AA3FBBCFE307FAACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1553500FA34B1E09DEF2B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8DEDF71500AD2EA168EA514;
+			remoteInfo = "Pods-La Bourse-Refresher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		171F813CD2380263DA8D5168 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C2861FC8BE2A957597988BE /* Pods-La Bourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-La Bourse.release.xcconfig"; sourceTree = "<group>"; };
+		1E9B56B635F6F6DCBF5AEE9F /* PullToRefreshExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefreshExtension.swift; path = Refresher/PullToRefreshExtension.swift; sourceTree = "<group>"; };
+		22996DEC19E26CBBF97A8F9A /* Pods-La Bourse-Refresher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-La Bourse-Refresher-prefix.pch"; sourceTree = "<group>"; };
+		2D0167789BF27DEBC8A42917 /* Pods-La Bourse-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-La Bourse-environment.h"; sourceTree = "<group>"; };
+		2DF463631BE5866B65C30610 /* Pods-La Bourse-Refresher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-La Bourse-Refresher.xcconfig"; sourceTree = "<group>"; };
+		440A90B56C5787EAAE2AA24E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5328F2EEE66456B8D6B8648A /* Pods-La Bourse-Refresher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-La Bourse-Refresher-Private.xcconfig"; sourceTree = "<group>"; };
+		7332416EBA7DB8C22F24C680 /* Pods-La Bourse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-La Bourse-frameworks.sh"; sourceTree = "<group>"; };
+		783E8860163F465C7BEDBDD9 /* PullToRefreshView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefreshView.swift; path = Refresher/PullToRefreshView.swift; sourceTree = "<group>"; };
+		788802C66E1081F35B0F5A02 /* Pods-La Bourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-La Bourse.debug.xcconfig"; sourceTree = "<group>"; };
+		7CF4C9711CADC63479CE5412 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Refresher/Animator.swift; sourceTree = "<group>"; };
+		8C72986B557A732CC39E30CE /* Pods-La Bourse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-La Bourse.modulemap"; sourceTree = "<group>"; };
+		9080F51D7FE4077CBBC0981D /* Refresher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Refresher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91835F7AB7EA0342620B4AA1 /* Pods-La Bourse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-La Bourse-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A477A6FC2BBAEB2AB0E405A3 /* Pods-La Bourse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-La Bourse-dummy.m"; sourceTree = "<group>"; };
+		AD5D7AEAAF260D72B13C6CAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94B67082DC855341A3759CF /* Pods-La Bourse-Refresher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-La Bourse-Refresher-dummy.m"; sourceTree = "<group>"; };
+		CA0713250446F658904285F3 /* Pods-La Bourse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-La Bourse-acknowledgements.plist"; sourceTree = "<group>"; };
+		D43230F5F0118927FC67EBD0 /* Pods-La Bourse-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-La Bourse-resources.sh"; sourceTree = "<group>"; };
+		D5DA09E4E992C2CE28689B01 /* Pods-La Bourse-Refresher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-La Bourse-Refresher.modulemap"; sourceTree = "<group>"; };
+		D70F4343F3B7C3C634FC0DED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9457DA3B2A1E2ED1E9923C3 /* Pods-La Bourse-Refresher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-La Bourse-Refresher-umbrella.h"; sourceTree = "<group>"; };
+		DA4B262009A56FF557DB8F09 /* Pods_La_Bourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_La_Bourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E077B146475C267F9778E22B /* Pods-La Bourse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-La Bourse-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA77E88484CCD92B3AEA1E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3667E178866E0725AD24C5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC75F5120151A08D30A7D14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC9A8793EC63975AED3B23A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B146352A21914CC655FCC7F = {
+			isa = PBXGroup;
+			children = (
+				440A90B56C5787EAAE2AA24E /* Podfile */,
+				8B64D34E0E3E15F12215516E /* Frameworks */,
+				62BFA23FAB421567F64BC9AE /* Pods */,
+				13C244FF65EF3EA691F7B056 /* Products */,
+				E2D288195B98E32654BBB9B9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		13C244FF65EF3EA691F7B056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B262009A56FF557DB8F09 /* Pods_La_Bourse.framework */,
+				9080F51D7FE4077CBBC0981D /* Refresher.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320E73563DCAB029416CA61B /* Refresher */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4C9711CADC63479CE5412 /* Animator.swift */,
+				1E9B56B635F6F6DCBF5AEE9F /* PullToRefreshExtension.swift */,
+				783E8860163F465C7BEDBDD9 /* PullToRefreshView.swift */,
+				674BA22F01A66880E779C258 /* Support Files */,
+			);
+			path = Refresher;
+			sourceTree = "<group>";
+		};
+		387029AE88CE362FEF156BB0 /* Pods-La Bourse */ = {
+			isa = PBXGroup;
+			children = (
+				171F813CD2380263DA8D5168 /* Info.plist */,
+				8C72986B557A732CC39E30CE /* Pods-La Bourse.modulemap */,
+				91835F7AB7EA0342620B4AA1 /* Pods-La Bourse-acknowledgements.markdown */,
+				CA0713250446F658904285F3 /* Pods-La Bourse-acknowledgements.plist */,
+				A477A6FC2BBAEB2AB0E405A3 /* Pods-La Bourse-dummy.m */,
+				2D0167789BF27DEBC8A42917 /* Pods-La Bourse-environment.h */,
+				7332416EBA7DB8C22F24C680 /* Pods-La Bourse-frameworks.sh */,
+				D43230F5F0118927FC67EBD0 /* Pods-La Bourse-resources.sh */,
+				E077B146475C267F9778E22B /* Pods-La Bourse-umbrella.h */,
+				788802C66E1081F35B0F5A02 /* Pods-La Bourse.debug.xcconfig */,
+				1C2861FC8BE2A957597988BE /* Pods-La Bourse.release.xcconfig */,
+			);
+			name = "Pods-La Bourse";
+			path = "Target Support Files/Pods-La Bourse";
+			sourceTree = "<group>";
+		};
+		62BFA23FAB421567F64BC9AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				320E73563DCAB029416CA61B /* Refresher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		674BA22F01A66880E779C258 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D7AEAAF260D72B13C6CAF /* Info.plist */,
+				D5DA09E4E992C2CE28689B01 /* Pods-La Bourse-Refresher.modulemap */,
+				2DF463631BE5866B65C30610 /* Pods-La Bourse-Refresher.xcconfig */,
+				5328F2EEE66456B8D6B8648A /* Pods-La Bourse-Refresher-Private.xcconfig */,
+				C94B67082DC855341A3759CF /* Pods-La Bourse-Refresher-dummy.m */,
+				22996DEC19E26CBBF97A8F9A /* Pods-La Bourse-Refresher-prefix.pch */,
+				D9457DA3B2A1E2ED1E9923C3 /* Pods-La Bourse-Refresher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-La Bourse-Refresher";
+			sourceTree = "<group>";
+		};
+		8B64D34E0E3E15F12215516E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB8E0F92D4A0F4FFAC639D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EB8E0F92D4A0F4FFAC639D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D70F4343F3B7C3C634FC0DED /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E2D288195B98E32654BBB9B9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				387029AE88CE362FEF156BB0 /* Pods-La Bourse */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		108C0EB6D2E9E672D8DF23FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5601715D84A08ECECAE7F73F /* Pods-La Bourse-Refresher-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2A119EFB9E81105874757F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34597A4B78EE95494012B55 /* Pods-La Bourse-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54421669700706ECD426BBE5 /* Pods-La Bourse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8663E4D267C33569AA306611 /* Build configuration list for PBXNativeTarget "Pods-La Bourse" */;
+			buildPhases = (
+				1E5137B3D261636BB21E3A85 /* Sources */,
+				FC75F5120151A08D30A7D14C /* Frameworks */,
+				7F2A119EFB9E81105874757F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C231AAB15FAC14A8A379479 /* PBXTargetDependency */,
+			);
+			name = "Pods-La Bourse";
+			productName = "Pods-La Bourse";
+			productReference = DA4B262009A56FF557DB8F09 /* Pods_La_Bourse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8DEDF71500AD2EA168EA514 /* Pods-La Bourse-Refresher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F879138E289E51F1FD3FB1B /* Build configuration list for PBXNativeTarget "Pods-La Bourse-Refresher" */;
+			buildPhases = (
+				A95325E1EB48BFCD9A4B696B /* Sources */,
+				BA77E88484CCD92B3AEA1E65 /* Frameworks */,
+				108C0EB6D2E9E672D8DF23FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-La Bourse-Refresher";
+			productName = "Pods-La Bourse-Refresher";
+			productReference = 9080F51D7FE4077CBBC0981D /* Refresher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB1553500FA34B1E09DEF2B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 109E27994D2B11FB964C82EE /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B146352A21914CC655FCC7F;
+			productRefGroup = 13C244FF65EF3EA691F7B056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54421669700706ECD426BBE5 /* Pods-La Bourse */,
+				C8DEDF71500AD2EA168EA514 /* Pods-La Bourse-Refresher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E5137B3D261636BB21E3A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E002D14B5E229C1AC7B8BE32 /* Pods-La Bourse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95325E1EB48BFCD9A4B696B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B43F9635D2DEF63F96AD6D /* Animator.swift in Sources */,
+				B5ECA1E15E0ADC9D38082B11 /* Pods-La Bourse-Refresher-dummy.m in Sources */,
+				D22C4483ED04EE0B520817EE /* PullToRefreshExtension.swift in Sources */,
+				ECD6868AECC6E84CBFB1179B /* PullToRefreshView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C231AAB15FAC14A8A379479 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-La Bourse-Refresher";
+			target = C8DEDF71500AD2EA168EA514 /* Pods-La Bourse-Refresher */;
+			targetProxy = 95DCF48AA3FBBCFE307FAACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34DBAD35F2EDE15A7C702C05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788802C66E1081F35B0F5A02 /* Pods-La Bourse.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-La Bourse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-La Bourse/Pods-La Bourse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_La_Bourse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E464FE250248C56F31E8E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5328F2EEE66456B8D6B8648A /* Pods-La Bourse-Refresher-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-La Bourse-Refresher/Pods-La Bourse-Refresher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-La Bourse-Refresher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-La Bourse-Refresher/Pods-La Bourse-Refresher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Refresher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76545D9B6E9A4BF70261878B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5328F2EEE66456B8D6B8648A /* Pods-La Bourse-Refresher-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-La Bourse-Refresher/Pods-La Bourse-Refresher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-La Bourse-Refresher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-La Bourse-Refresher/Pods-La Bourse-Refresher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Refresher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADC4CB6D621E687D7C6A94F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DBA225DC51733DD0E55222F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2861FC8BE2A957597988BE /* Pods-La Bourse.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-La Bourse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-La Bourse/Pods-La Bourse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_La_Bourse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E21B4CBFD5E21A26A98805FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109E27994D2B11FB964C82EE /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC4CB6D621E687D7C6A94F1 /* Debug */,
+				E21B4CBFD5E21A26A98805FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8663E4D267C33569AA306611 /* Build configuration list for PBXNativeTarget "Pods-La Bourse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DBAD35F2EDE15A7C702C05 /* Debug */,
+				DBA225DC51733DD0E55222F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F879138E289E51F1FD3FB1B /* Build configuration list for PBXNativeTarget "Pods-La Bourse-Refresher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76545D9B6E9A4BF70261878B /* Debug */,
+				3E464FE250248C56F31E8E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB1553500FA34B1E09DEF2B0 /* Project object */;
+}

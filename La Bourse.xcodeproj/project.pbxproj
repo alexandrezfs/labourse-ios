@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C185E73C92AED85C12AD118 /* Pods_La_Bourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F41E1C4699EABFDA610FCBC /* Pods_La_Bourse.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D5F80AB11B551269000A5342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F80AB01B551269000A5342 /* AppDelegate.swift */; };
 		D5F80AB31B551269000A5342 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F80AB21B551269000A5342 /* FirstViewController.swift */; };
 		D5F80AB51B551269000A5342 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F80AB41B551269000A5342 /* SecondViewController.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		367FC1A3B3FDCCF2689B18D9 /* Pods-La Bourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Bourse.release.xcconfig"; path = "Pods/Target Support Files/Pods-La Bourse/Pods-La Bourse.release.xcconfig"; sourceTree = "<group>"; };
+		7F41E1C4699EABFDA610FCBC /* Pods_La_Bourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_La_Bourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F80AAB1B551269000A5342 /* La Bourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "La Bourse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F80AAF1B551269000A5342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F80AB01B551269000A5342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		D5F80AD21B5522D3000A5342 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D5F80AD41B553E99000A5342 /* StoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreController.swift; sourceTree = "<group>"; };
 		D5F80ADA1B5542C7000A5342 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		E5F4776979B167194C036C5E /* Pods-La Bourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-La Bourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-La Bourse/Pods-La Bourse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C185E73C92AED85C12AD118 /* Pods_La_Bourse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0D3482B72EFE697DCA3D31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4776979B167194C036C5E /* Pods-La Bourse.debug.xcconfig */,
+				367FC1A3B3FDCCF2689B18D9 /* Pods-La Bourse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAF14A82A0D495A65BF0D701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F41E1C4699EABFDA610FCBC /* Pods_La_Bourse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5F80AA21B551269000A5342 = {
 			isa = PBXGroup;
 			children = (
 				D5F80AAD1B551269000A5342 /* La Bourse */,
 				D5F80AC51B551269000A5342 /* La BourseTests */,
 				D5F80AAC1B551269000A5342 /* Products */,
+				0D0D3482B72EFE697DCA3D31 /* Pods */,
+				CAF14A82A0D495A65BF0D701 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5F80ACC1B551269000A5342 /* Build configuration list for PBXNativeTarget "La Bourse" */;
 			buildPhases = (
+				C2495B6F8F0474BEE0F02746 /* Check Pods Manifest.lock */,
 				D5F80AA71B551269000A5342 /* Sources */,
 				D5F80AA81B551269000A5342 /* Frameworks */,
 				D5F80AA91B551269000A5342 /* Resources */,
+				9411501CD6FBD79C36872781 /* Embed Pods Frameworks */,
+				E6E7F9511A9CFFC0AF2A572A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +246,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9411501CD6FBD79C36872781 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-La Bourse/Pods-La Bourse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2495B6F8F0474BEE0F02746 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E7F9511A9CFFC0AF2A572A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-La Bourse/Pods-La Bourse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5F80AA71B551269000A5342 /* Sources */ = {
@@ -356,6 +431,7 @@
 		};
 		D5F80ACD1B551269000A5342 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F4776979B167194C036C5E /* Pods-La Bourse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "La Bourse/Info.plist";
@@ -366,6 +442,7 @@
 		};
 		D5F80ACE1B551269000A5342 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367FC1A3B3FDCCF2689B18D9 /* Pods-La Bourse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "La Bourse/Info.plist";
@@ -427,6 +504,7 @@
 				D5F80ACE1B551269000A5342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5F80ACF1B551269000A5342 /* Build configuration list for PBXNativeTarget "La BourseTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +513,7 @@
 				D5F80AD11B551269000A5342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
