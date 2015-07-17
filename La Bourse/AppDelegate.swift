@@ -18,8 +18,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound |
             UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        
+        var dailyNotificationTimer = NSTimer.scheduledTimerWithTimeInterval(60.0, target: self, selector: Selector("dailyNotification"), userInfo: nil, repeats: true)
 
         return true
+    }
+    
+    func dailyNotification() {
+        
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute, fromDate: date)
+        let hour = components.hour
+        let minutes = components.minute
+        
+        if(hour == 20 && minutes == 30) {
+            
+            let url = NSURL(string: "http://data.librairielabourse.fr/storeSales/today")
+            
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+                
+                let json = JSON(data: data)
+                
+                var total = 0.0;
+                
+                for (key: String, subJson: JSON) in json {
+                    
+                    if key == "today" {
+                        for (subKey: String, subSubJson: JSON) in subJson {
+                            total += subSubJson["chiffre_journee"].doubleValue
+                        }
+                    }
+                }
+                
+                var localNotification: UILocalNotification = UILocalNotification()
+                localNotification.alertAction = "La Bourse - Chiffre d'affaire"
+                localNotification.alertBody = "La journée est terminée. Votre chiffre d'affaire est de " + String(format:"%.2f", total) + " €."
+                localNotification.fireDate = NSDate(timeIntervalSinceNow: 0)
+                UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+            }
+            
+            task.resume()
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
