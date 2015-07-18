@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let hour = components.hour
         let minutes = components.minute
         
-        if(hour == 20 && minutes == 30) {
+        if((hour == 20 && minutes == 30) || (hour == 10 && minutes == 30)) {
             
             let url = NSURL(string: "http://data.librairielabourse.fr/storeSales/today")
             
@@ -53,7 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 var localNotification: UILocalNotification = UILocalNotification()
                 localNotification.alertAction = "La Bourse - Chiffre d'affaire"
-                localNotification.alertBody = "La journée est terminée. Votre chiffre d'affaire est de " + String(format:"%.2f", total) + " €."
+                
+                if(hour == 20 && minutes == 30) {
+                    localNotification.alertBody = "La journée est terminée. Votre chiffre d'affaire est de " + String(format:"%.2f", total) + " €."
+                }
+                else if(hour == 10 && minutes == 30) {
+                    localNotification.alertBody = "La journée commence, il est 10H30. Vous commencez à " + String(format:"%.2f", total) + " €."
+                }
+                
                 localNotification.fireDate = NSDate(timeIntervalSinceNow: 0)
                 UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
             }
