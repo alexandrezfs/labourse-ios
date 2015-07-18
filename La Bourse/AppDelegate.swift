@@ -52,12 +52,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
                 var localNotification: UILocalNotification = UILocalNotification()
-                localNotification.alertAction = "La Bourse - Chiffre d'affaire"
                 
                 if(hour == 20 && minutes == 30) {
+                    localNotification.alertAction = "La Bourse - Fin de journée"
                     localNotification.alertBody = "La journée est terminée. Votre chiffre d'affaire est de " + String(format:"%.2f", total) + " €."
                 }
                 else if(hour == 10 && minutes == 30) {
+                    localNotification.alertAction = "La Bourse - Bonjour !"
                     localNotification.alertBody = "La journée commence, il est 10H30. Vous commencez à " + String(format:"%.2f", total) + " €."
                 }
                 
