@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-La Bourse-Refresher.xcscheme</key>
+		<key>Pods-La Bourse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-La Bourse.xcscheme</key>
+		<key>Refresher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>54421669700706ECD426BBE5</key>
+		<key>6FDC0A626ABBC89CD4494A7CC4C94E6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C8DEDF71500AD2EA168EA514</key>
+		<key>DBB9E0869DE9B87632CBACCF5957627E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

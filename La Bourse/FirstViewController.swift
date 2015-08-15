@@ -39,7 +39,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func UIColorFromRGB(colorCode: String, alpha: Float = 1.0) -> UIColor {
-        var scanner = NSScanner(string:colorCode)
+        let scanner = NSScanner(string:colorCode)
         var color:UInt32 = 0;
         scanner.scanHexInt(&color)
         
@@ -56,14 +56,14 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         let url = NSURL(string: "http://data.librairielabourse.fr/storeSales/today")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
             
             self.titlesStr = [String]()
             self.moneyStr = [String]()
             
-            let json = JSON(data: data)
+            let json = JSON(data: data!)
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 if key == "today" {
                     
@@ -75,7 +75,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
             }
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 if key == "lastWeek" {
                     
@@ -87,7 +87,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
             }
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 if key == "lastMonth" {
                     
@@ -99,7 +99,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
             }
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 if key == "lastYear" {
                     
@@ -122,7 +122,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func buildTableStep(subJson: JSON) {
         
-        for (key: String, subSubJson: JSON) in subJson {
+        for (key, subSubJson): (String, JSON) in subJson {
 
         	self.titlesStr.append(subSubJson["magasin"].stringValue)
         	self.moneyStr.append(subSubJson["chiffre_journee"].stringValue + " €")
@@ -145,7 +145,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) 
         
         let row = indexPath.row
 
@@ -191,7 +191,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
-        println(titlesStr[row])
+        print(titlesStr[row])
         
         if moneyStr[row] != "Aujourd'hui" &&
         moneyStr[row] != "L'an dernier" &&

@@ -22,15 +22,15 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         let url = NSURL(string: "http://data.librairielabourse.fr/stores")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
             
-            let json = JSON(data: data)
+            let json = JSON(data: data!)
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 self.magasins.append(subJson["localisation"].stringValue)
                 
-                println(subJson["localisation"])
+                print(subJson["localisation"])
             }
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -60,7 +60,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) 
         
         let row = indexPath.row
         cell.textLabel?.text = magasins[row]
@@ -74,7 +74,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         let row = indexPath.row
-        println(magasins[row])
+        print(magasins[row])
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("StoreView") as! StoreController

@@ -30,11 +30,11 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
         let url = NSURL(string: "http://data.librairielabourse.fr/storeSales/byLocation/" + storeName!)
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding))
             
-            let json = JSON(data: data)
+            let json = JSON(data: data!)
             
-            for (key: String, subJson: JSON) in json {
+            for (key, subJson): (String, JSON) in json {
                 
                 self.dates.append(subJson["date"].stringValue)
                 self.money.append(subJson["chiffre_journee"].stringValue + " €")
@@ -62,7 +62,7 @@ class StoreController: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(self.textCellIdentifier, forIndexPath: indexPath) 
         
         let row = indexPath.row
         cell.textLabel?.text = money[row]
