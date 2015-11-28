@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					D5F80AAA1B551269000A5342 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6XZJK8C37L;
 					};
 					D5F80AC11B551269000A5342 = {
 						CreatedOnToolsVersion = 6.4;
@@ -436,10 +437,13 @@
 			baseConfigurationReference = E5F4776979B167194C036C5E /* Pods-La Bourse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "La Bourse/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -448,10 +452,13 @@
 			baseConfigurationReference = 367FC1A3B3FDCCF2689B18D9 /* Pods-La Bourse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "La Bourse/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
